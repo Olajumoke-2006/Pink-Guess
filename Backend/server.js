@@ -36,3 +36,10 @@ const startServer = async () => {
 };
 
 startServer();
+
+app.get("/", (req, res) => {
+  res.json({
+    status: "OK",
+    message: "Pink Guess backend is running 🚀"
+  });
+});
